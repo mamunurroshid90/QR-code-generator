@@ -7,8 +7,7 @@ qrButton.addEventListener("click", () => {
   if (qrInputValue === "") {
     alert("Please Enter a valid url");
   } else {
-    qrImage.src ==
-      `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrInputValue}`;
+    qrImage.src = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrInputValue}`;
     qrImage.alt = `QR Code For ${qrInputValue}`;
   }
 });
